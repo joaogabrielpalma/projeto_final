@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pizzaria Forno a Lenha</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>Pizzaria Forno a Lenha</h1>
+  <button id="view-cart-btn">Carrinho (<span id="cart-count">0</span>)</button>
+</header>
+
+<main>
+  <section id="pizzas-section">
+    <h2 class="center">Pizzas</h2>
+    <div id="pizzas" class="grid"></div>
+  </section>
+
+  <section id="cart-section" class="hidden">
+    <h2 class="center">Carrinho</h2>
+    <div id="cart-contents"></div>
+
+    <div class="cart-actions center">
+      <button id="checkout-btn">Finalizar Compra</button>
+      <button id="back-to-shop-btn">Voltar às Compras</button>
+    </div>
+
+    <div id="checkout-result" class="center"></div>
+  </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

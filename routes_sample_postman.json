@@ -1,0 +1,36 @@
+
+{
+  "info": {
+    "name": "Pizzeria API - Sample Requests"
+  },
+  "requests": [
+    {
+      "method": "GET",
+      "url": "http://localhost:3000/pizzas",
+      "name": "List Pizzas"
+    },
+    {
+      "method": "POST",
+      "url": "http://localhost:3000/cart",
+      "name": "Create Cart",
+      "body": {
+        "mode": "raw",
+        "raw": "{ }"
+      }
+    },
+    {
+      "method": "POST",
+      "url": "http://localhost:3000/cart/1/items",
+      "name": "Add Item",
+      "body": {
+        "mode": "raw",
+        "raw": "{ \"pizza_id\": 1, \"quantity\": 2 }"
+      }
+    },
+    {
+      "method": "POST",
+      "url": "http://localhost:3000/checkout/1",
+      "name": "Checkout Cart"
+    }
+  ]
+}
